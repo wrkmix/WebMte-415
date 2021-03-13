@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.container h1{
+    padding: 60px 0;
+    color: #000000;
+    
+    font-size: 44px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img{
+    width: 87%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.small-img-row{
+    display: flex;
+    background: #fff;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+    margin-left: 80px;
+    box-shadow:  5px 5px 10px #d1d1d1,
+                 -5px -5px 10px #ffffff;
+}
+
+.small-img{
+    position: relative;
+}
+
+.small-img img{
+    width: 200px;
+}
+
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+
+.small-img .play-btn{
+    width: 35px;
+}
+.dot, .trigger {
+    position: absolute;
+    top: 135%;
+    Left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10vw;
+    width: 10vw;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.6),
+                -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+.trigger {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,0.5);
+    Letter-spacing: 0.05em;
+    cursor: pointer;
+}
+.trigger::before{
+    content: 'CLICK-ME';
+}
+#trigger:checked + .trigger::before {
+    content: 'RESET';
+}
+#trigger:checked + .trigger + .dots > .dot {
+    animation-name: wave;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.dot {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale3d(0,0,1);
+    margin-bottom: 200px;
+}
+.dot:nth-of-type(2) {
+    z-index: 1;
+    animation-delay: .5s;
+}
+.dot:nth-of-type(3) {
+    z-index: 2;
+    animation-delay: 1s;
+}
+
+@keyframes wave {
+    0% {
+        opacity: 1;
+        transform: translate3d(-50%, -50%, 0) scale3d(1,1,1);
+    }
+    100%{
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale3d(calc(100/25), calc(100/25), 1);
+    }    
+}

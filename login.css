@@ -1,0 +1,149 @@
+body{
+    margin: 0 0;
+    font-family: sans-serif;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e0e5ec;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #e0e5ec;
+    box-shadow: 7px 7px 14px #c1c5cb ,
+                -7px -7px 14px #ffffff;
+}
+
+.container .form > * {
+    width: 200px;
+}
+
+.container .form h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.container .form .icons{
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.container .form .icons i{
+    margin: 0 4px;
+    border-radius: 30px;
+    background-color: #e0e5ec;
+    box-shadow: 7px 7px 14px #c1c5cb ,
+                -7px -7px 14px #ffffff;
+}
+
+.container .form .icons i:active{
+    margin: 0 4px;
+    border-radius: 30px;
+    background-color: #e0e5ec;
+    box-shadow: inset 7px 7px 14px #c1c5cb ,
+                inset -7px -7px 14px #ffffff;
+}
+
+.container .form input{
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 15px;
+    color: #333333;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e0e5ec;
+    box-shadow: inset 7px 7px 14px #c1c5cb ,
+                inset -7px -7px 14px #ffffff;
+}
+
+.container .form button{
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #1f6fe0;
+    color: white;
+}
+
+.container .form button:active{
+    box-shadow: inset 7px 7px 14px #144892 ,
+    inset -7px -7px 14px #2a96ff;
+}
+
+.container .form p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.container .form p + p{
+    color: #1f6fe0;
+    cursor: pointer;
+}
+
+.container.dark{
+    background-color: #242424;
+    color: #ffffff;
+    z-index: 2;
+    transition-duration: 1s;
+    clip-path: circle(100% at 0 50%);
+}
+
+.container.dark.active{
+    clip-path: circle(0 at 0 50%);
+}
+
+.container.dark .form{
+    border-radius: 30px;
+    background: #242424;
+    box-shadow: 7px 7px 14px  #1a1a1a,
+                -7px -7px 14px #2e2e2e;
+}
+
+.container.dark .form .icons i{
+    border-radius: 30px;
+    background: #242424;
+    box-shadow: 7px 7px 14px  #1a1a1a,
+                -7px -7px 14px #2e2e2e;
+}
+
+.container.dark .form .icons i:hover{
+    box-shadow: inset 7px 7px 14px  #1a1a1a,
+                inset -7px -7px 14px #2e2e2e;
+}
+
+.container.dark .form input{
+    border-radius: 30px;
+    background: #242424;
+    box-shadow: inset 7px 7px 14px  #1a1a1a,
+    inset -7px -7px 14px #2e2e2e;
+    color: #bbbbbb;
+}
+
+.container.dark .form button{
+    background-color: #144aad;
+}
+
+.container.dark .form button:active{
+    box-shadow: inset 7px 7px 14px  #0f347e,
+    inset -7px -7px 14px #195edc;
+}

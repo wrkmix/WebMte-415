@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.container h1{
+    padding: 60px 0;
+    color: #000000;
+    
+    font-size: 44px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img{
+    width: 87%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.small-img-row{
+    display: flex;
+    background: #fff;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+    margin-left: 80px;
+    box-shadow:  5px 5px 10px #d1d1d1,
+                 -5px -5px 10px #ffffff;
+}
+
+.small-img{
+    position: relative;
+}
+
+.small-img img{
+    width: 200px;
+}
+
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+
+.small-img .play-btn{
+    width: 35px;
+}
+
+.ring{
+    background-color: #ececec;
+    position: absolute;
+    margin: auto;
+    top: 170%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 
+    -10px -10px 15px rgba(255,255,255,0.3),
+    10px 10px 15px rgba(70,70,70,0.15),
+    inset -10px -10px 15px rgba(255,255,255,0.3),
+    inset 10px 10px 15px rgba(70,70,70,0.15);
+    border: 15px solid #ececec;
+    border-radius: 50%;
+}
+.ring4{
+    height: 30px;
+    width: 30px;
+    animation: glow4 2.5s infinite;
+}
+@keyframes glow4{
+    0%{
+        background-color: #ececec;
+    }
+    20%{
+        background-color: #ffad00;
+    }
+    100%{
+        background-color: #ffad00;
+    }
+}
+
+.ring3{
+    height: 120px;
+    width: 120px;
+    animation: glow3 2.5s infinite;
+}
+@keyframes glow3{
+    20%{
+        background-color: #ececec;
+    }
+    40%{
+        background-color: #ffad00;
+    }
+    100%{
+        background-color: #ffad00;
+    }
+}
+
+.ring2{
+    height: 200px;
+    width: 200px;
+    animation: glow2 2.5s infinite;
+}
+@keyframes glow2{
+    40%{
+        background-color: #ececec;
+    }
+    60%{
+        background-color: #ffad00;
+    }
+    100%{
+        background-color: #ffad00;
+    }
+}
+
+.ring1{
+    height: 280px;
+    width: 280px;
+    animation: glow1 2.5s infinite;
+}
+@keyframes glow1{
+    60%{
+        background-color: #ececec;
+    }
+    80%{
+        background-color: #ffad00;
+    }
+    100%{
+        background-color: #ffad00;
+    }
+}

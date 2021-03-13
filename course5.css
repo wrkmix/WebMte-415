@@ -1,0 +1,123 @@
+*:before
+*:after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.container h1{
+    padding: 60px 0;
+    color: #000000;
+    font-size: 44px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img{
+    width: 87%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.small-img-row{
+    display: flex;
+    background: #fff;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+    margin-left: 80px;
+    box-shadow:  5px 5px 10px #d1d1d1,
+                 -5px -5px 10px #ffffff;
+}
+
+.small-img{
+    position: relative;
+}
+
+.small-img img{
+    width: 200px;
+}
+
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+
+.small-img .play-btn{
+    width: 35px;
+}
+.gradient-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top:320px;
+  }
+  
+  .btn{
+    border: none;
+    margin: 20px;
+    padding: 28px;
+    width: 260px;
+    font-family: "Poppins",sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: 0.6s;
+    font-size: 20px;
+  }
+  
+  .btn1{
+    background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+  }
+  
+  .btn2{
+    background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+  }
+  
+  .btn3{
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+  }
+  
+  .btn4{
+    background-image: linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+  }
+  
+  .btn:hover{
+    background-position: right;
+  }
+  
